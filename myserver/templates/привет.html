@@ -1,18 +1,22 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{title}}</title>
-    <link href="/static/css/css.css" rel='stylesheet'>
+    <link href="{% static '/css/css.css' %}" rel='stylesheet'>
 </head>
 <body>
     <h3>Hello</h3>
         <p>
             {% if promo %}
-              Все хорошо
+              True
             {% else %}
-                Все плохо
+              False
             {% endif%}
         </p>
+    <button onclick="location.href = '{% url 'index'%}';"> Переход </button>
 </body>
 </html>
