@@ -1,14 +1,11 @@
+{% extends 'base.html'%}
 {% load static %}
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
+{% block css %}
     <link href="{% static '/css/css.css' %}" rel='stylesheet'>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <h3>Hello</h3>
         <p>
             {% if promo %}
@@ -18,5 +15,6 @@
             {% endif%}
         </p>
     <button onclick="location.href = '{% url 'index'%}';"> Переход </button>
-</body>
-</html>
+{% endblock %}
+
+
