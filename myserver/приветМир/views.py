@@ -5,7 +5,6 @@ from django.shortcuts import render
 def привет(request):
     context = {
         'title': 'store',
-        'username': 'valeriy',
         'promo': True,
     }
     return render(request, 'привет.html', context)
