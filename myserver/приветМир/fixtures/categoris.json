@@ -1,0 +1,1 @@
+[{"model": "приветМир.testcat", "pk": 1, "fields": {"name": "Куртка", "description": "описание куртки"}}, {"model": "приветМир.testcat", "pk": 2, "fields": {"name": "обувь", "description": "описание обуви"}}]
