@@ -6,6 +6,12 @@
 {% endblock %}
 
 {% block content %}
+    <div>
+        {% for category in categorys %}
+            <h2> {{ category.name }}</h2>
+            <a> {{ category.description }}</a>
+        {% endfor %}
+     </div>
     <h3>Hello</h3>
         <p>
             {% if promo %}
@@ -13,6 +19,12 @@
             {% else %}
               False
             {% endif%}
+        <div>
+            {% for product in products %}
+                <h1>{{ product.name }}</h1>
+                <a href=""> {{ product.prise}} </a>
+            {% endfor %}
+        </div>
         </p>
     <button onclick="location.href = '{% url 'index'%}';"> Переход </button>
 {% endblock %}

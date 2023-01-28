@@ -21,6 +21,6 @@ from приветМир.views import привет
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page, name='index'),
-    path('привет', привет, name='привет')
+    path('привет', привет, name='привет'),
 
 ]
