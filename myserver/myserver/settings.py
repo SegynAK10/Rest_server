@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'myapp1',
     'приветМир',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +129,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# users
+AUTH_USER_MODEL = 'users.User'
