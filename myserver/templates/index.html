@@ -4,4 +4,6 @@
 {% block content %}
     <h1>Hello INDEX</h1>
     <button onclick="location.href = '{% url 'привет:index'%}';"> Переход </button>
+    <div><a href="{% url 'users:login' %}">логин</a></div>
+    <div><a href="{% url 'users:registration' %}">регистрация</a></div>
 {% endblock %}

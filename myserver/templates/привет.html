@@ -27,6 +27,8 @@
         </div>
         </p>
     <button onclick="location.href = '{% url 'index'%}';"> Переход </button>
+        <div><a href="{% url 'users:login' %}">логин</a></div>
+        <div><a href="{% url 'users:registration' %}">регистрация</a></div>
 {% endblock %}
 
 

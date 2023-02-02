@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page, name='index'),
     path('привет', include('приветМир.urls', namespace='привет')),
+    path('users/', include('users.urls', namespace='users')),
+
 
 ]
